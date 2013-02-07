@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
