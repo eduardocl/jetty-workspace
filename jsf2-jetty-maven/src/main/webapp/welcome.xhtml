@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+  <title>Welcome</title>
+</h:head>
+
+<h:body>
+  <h:form>
+  <p:dataTable value="#{myBean.contatos}" var="contato" >
+  	<p:column headerText="id">
+  		<p:outputLabel value="#{contato.id}"></p:outputLabel>
+  	</p:column>
+  	<p:column headerText="Name">
+  		<p:outputLabel value="#{contato.nome}"></p:outputLabel>
+  	</p:column>
+  	<p:column headerText="email">
+  		<p:outputLabel value="#{contato.email}"></p:outputLabel>
+  	</p:column>
+  	
+  </p:dataTable>
+  <p:commandButton action="#{myBean.add}" ajax="false" value="add"></p:commandButton>
+  </h:form>
+</h:body>
+</html>

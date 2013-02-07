@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	
+	<title>JSF Demo</title>
+</h:head>
+<h:body style="font-size:9pt;">
+	
+	
+	<h:form>
+	
+		<p:themeSwitcher style="width:165px" id="defaultSwitcher" value="#{themeSwitcherBean.themeSelected}"  >
+            <f:selectItem itemLabel="Choose Theme" itemValue="" />
+            <f:selectItems value="#{themeSwitcherBean.themes}" />
+            <p:ajax listener="#{themeSwitcherBean.saveTheme}" event="change"></p:ajax>
+        </p:themeSwitcher>
+	
+	
+		<br/>
+		<br/>
+		Nome:
+		<p:inputText value="#{backBean.name}"/><br/>
+		Email:
+		<p:inputText value="#{backBean.email}"/>
+    	<p:commandButton value="Go Home" ajax="false" action="#{backBean.save}" ></p:commandButton>
+    	
+    	
+	</h:form>
+
+</h:body>
+</html>
