@@ -18,7 +18,7 @@ public class ThemeSwitcherBean implements Serializable{
    
     private Theme theme;
    
-    private String themeSelected = "aristo";
+    private String themeSelected = "bootstrap";
 
     public ThemeSwitcherBean() {
     	System.out.println("ThemeSwitcherBean is being instanciated");

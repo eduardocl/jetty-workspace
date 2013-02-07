@@ -790,3 +790,50 @@ txn[1002], 08:54:44.682, select t0.id c0, t0.theme c1  from tb_theme t0
 txn[1002], 08:54:44.683, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[336] rows[1] name[] predicates[] bind[] 
 txn[1003], 08:54:44.698, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
 txn[1003], 08:54:44.698, FindMany type[Contact] origin[DenVF-.BJb2Bb.rWSbO] exeMicros[467] rows[6] name[] predicates[] bind[] 
+txn[1001], 11:49:51.757, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 11:49:51.773, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15631] rows[1] name[] predicates[] bind[] 
+txn[1002], 11:49:51.776, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 11:49:51.776, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[312] rows[1] name[] predicates[] bind[] 
+txn[1003], 11:49:51.810, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:49:51.813, FindMany type[Contact] origin[DenVF-.BJb2Bb.rWSbO] exeMicros[2180] rows[6] name[] predicates[] bind[] 
+txn[1001], 11:53:42.520, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 11:53:42.536, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15799] rows[1] name[] predicates[] bind[] 
+txn[1002], 11:53:42.539, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 11:53:42.539, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[435] rows[1] name[] predicates[] bind[] 
+txn[1003], 11:53:42.561, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:53:42.562, FindMany type[Contact] origin[DenVF-.BJb2Bb.rWSbO] exeMicros[586] rows[6] name[] predicates[] bind[] 
+txn[1004], 11:53:47.881, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1004], 11:53:47.882, FindMany type[Theme] origin[CcgMIR.B-txpS.CzmvQ0] exeMicros[137] rows[1] name[] predicates[] bind[] 
+txn[1005], 11:53:47.882, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1005], 11:53:47.882, FindMany type[Theme] origin[CcgMIR.B-txpS.Czm9zy] exeMicros[38] rows[1] name[] predicates[] bind[] 
+txn[1006], 11:53:47.883, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1006], 11:53:47.883, FindMany type[Theme] origin[CcgMIR.B-txpS.Cznpcs] exeMicros[37] rows[1] name[] predicates[] bind[] 
+txn[1007], 11:53:47.883, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1007], 11:53:47.883, FindMany type[Theme] origin[CcgMIR.B-txpS.CznwuL] exeMicros[37] rows[1] name[] predicates[] bind[] 
+txn[1008], 11:53:47.886, update tb_theme set theme=? where id=? and theme=? 
+txn[1008], 11:53:47.888, Binding Update [tb_theme]  set[theme=bootstrap, ] where[Id=1, theme=start, ] 
+txn[1008], 11:53:47.892, Updated [Theme] [1] 
+txn[1009], 11:53:47.894, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1009], 11:53:47.894, FindMany type[Theme] origin[CH3iX9.B-txpS.BvQztm] exeMicros[144] rows[1] name[] predicates[] bind[] 
+txn[1001], 11:57:51.148, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 11:57:51.167, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[18129] rows[1] name[] predicates[] bind[] 
+txn[1002], 11:57:51.169, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 11:57:51.169, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[320] rows[1] name[] predicates[] bind[] 
+txn[1003], 11:57:51.198, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:57:51.199, FindMany type[Contact] origin[DenVF-.BJb2Bb.rWSbO] exeMicros[660] rows[6] name[] predicates[] bind[] 
+txn[1001], 12:02:34.927, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 12:02:34.943, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15730] rows[1] name[] predicates[] bind[] 
+txn[1002], 12:02:34.946, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 12:02:34.946, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[336] rows[1] name[] predicates[] bind[] 
+txn[1003], 12:02:34.967, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 12:02:34.967, FindMany type[Contact] origin[DenVF-.BJb2Bb.rWSbO] exeMicros[498] rows[6] name[] predicates[] bind[] 
+txn[1004], 12:02:39.358, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1004], 12:02:39.358, FindMany type[Theme] origin[CcgMIR.B-txpS.CzmvQ0] exeMicros[135] rows[1] name[] predicates[] bind[] 
+txn[1005], 12:02:39.359, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1005], 12:02:39.359, FindMany type[Theme] origin[CcgMIR.B-txpS.Czm9zy] exeMicros[40] rows[1] name[] predicates[] bind[] 
+txn[1006], 12:02:39.359, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1006], 12:02:39.359, FindMany type[Theme] origin[CcgMIR.B-txpS.Cznpcs] exeMicros[52] rows[1] name[] predicates[] bind[] 
+txn[1007], 12:02:39.359, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1007], 12:02:39.359, FindMany type[Theme] origin[CcgMIR.B-txpS.CznwuL] exeMicros[40] rows[1] name[] predicates[] bind[] 
+txn[1009], 12:02:39.362, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1009], 12:02:39.362, FindMany type[Theme] origin[CH3iX9.B-txpS.BvQztm] exeMicros[38] rows[1] name[] predicates[] bind[] 

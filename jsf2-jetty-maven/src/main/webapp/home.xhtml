@@ -13,7 +13,7 @@
 <h:body style="font-size:9pt;">
 	
 	
-	<h:form>
+	<h:form enctype="multipart/form-data" >
 
 		<h:outputText value="#{themeSwitcherBean.themeSelected}"/>	
 	
@@ -23,6 +23,18 @@
             <p:ajax listener="#{themeSwitcherBean.saveTheme}" />
         </p:themeSwitcher>
 	
+	
+	  <p:fileUpload fileUploadListener="#{fileUploadController.handleFileUpload}"
+            mode="advanced" 
+            update="messages"
+            sizeLimit="100000" 
+            allowTypes="/(\.|\/)(gif|jpe?g|png)$/"/>
+
+    <p:growl id="messages" showDetail="true"/>
+	
+	 <p:fileUpload value="#{uploadFileMB.file}" mode="simple" />
+        <p:commandButton value="Submit" ajax="false" action="#{uploadFileMB.submit()}"/>
+        <h:outputLabel value="#{uploadFileMB.text}" />
 	
 		<br/>
 		<br/>
