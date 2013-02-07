@@ -20,34 +20,8 @@ public class BackBean {
 
 	private String name;
 	private List<Contact> contatos = Ebean.find(Contact.class).findList(); ;
-	//private ContactDAO contactDAO = new ContactDAO();
-	
-	//private ServerConfig config = new ServerConfig();
-	//private DataSourceConfig postgresDb = new DataSourceConfig();
-	//private EbeanServer server;
 	
 	public BackBean() {
-//    	config.setName("pgtest");
-//
-//    	// Define DataSource parameters
-//    	postgresDb.setDriver("org.postgresql.Driver");
-//    	postgresDb.setUsername("postgres");
-//    	postgresDb.setPassword("postgres");
-//    	postgresDb.setUrl("jdbc:postgresql://127.0.0.1:5432/ebean");
-//    	config.setDataSourceConfig(postgresDb);
-//
-//    	// specify a JNDI DataSource 
-//    	// config.setDataSourceJndiName("someJndiDataSourceName");
-//
-//    	// set DDL options...
-//    	config.setDdlGenerate(true);
-//    	config.setDdlRun(true);
-//    	config.setDatabasePlatform(new PostgresPlatform());
-//    	config.addClass(Contact.class);
-//    	
-//    	config.setDefaultServer(false);
-//    	config.setRegister(false);
-//    	server = EbeanServerFactory.create(config);
 	}
 	
 	
@@ -64,19 +38,10 @@ public class BackBean {
 		Contact contact = new Contact();
 		contact.setNome(name);
 		Ebean.save(contact);
-		//contactDAO.persist(contact);
-		//System.out.println( "----> " +  Ebean.find(Contact.class).findList().get(0).getNome());
-		//getContatos();	
 		return "welcome.xhtml";
 	}
 
 	public List<Contact> getContatos() {
-		System.out.println("----------------------");
-		//System.out.println(contactDAO.findAll());
-		System.out.println("----------------------");
-
-		//return contactDAO.findAll();
-		//return contatos;
 		return Ebean.find(Contact.class).findList();
 	}
 
