@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import javax.inject.Inject;
@@ -16,7 +17,7 @@ import org.application.FacesUtil;
 
 
 @Named
-@SessionScoped
+@RequestScoped
 public class BackBean implements Serializable{
 
 	private String name;
@@ -99,14 +100,6 @@ public class BackBean implements Serializable{
 		contactDAO.delete(idToDelete);
 		FacesUtil.addSuccessMessage("Deletado!");
 		return "list.xhtml";
-	}
-	
-	public void setContactToDelete(Long id) {
-		System.out.println("----------------->" + id);
-	}
-	
-	public void contactToDelete() {
-		System.out.println("-------------------> " + idToDelete);
 	}
 	
 	public Long getIdToDelete() {

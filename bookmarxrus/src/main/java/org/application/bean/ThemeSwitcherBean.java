@@ -36,7 +36,7 @@ public class ThemeSwitcherBean implements Serializable{
     }
     
 
-    @PostConstruct
+    //@PostConstruct
     public void init() {
     	
     	Theme themePersisted = themeDAO.getTheme();
