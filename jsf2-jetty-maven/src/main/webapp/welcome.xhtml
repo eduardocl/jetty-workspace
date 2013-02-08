@@ -21,7 +21,11 @@
   	<p:column headerText="email">
   		<p:outputLabel value="#{contato.email}"></p:outputLabel>
   	</p:column>
-  	
+  	<p:column>
+  	<h:commandLink action="#{myBean.edit}" value="#{contato.id}" >
+  			<f:param name="id" value="#{contato.id}"></f:param>
+  		</h:commandLink>
+  	</p:column>
   </p:dataTable>
   <p:commandButton action="#{myBean.add}" ajax="false" value="add"></p:commandButton>
   </h:form>

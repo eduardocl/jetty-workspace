@@ -55,6 +55,15 @@ public class ContactDAO extends GenericDAO implements Serializable{
 	    return allDogs;
 //		return new ArrayList<Contact>();
 	}
+
+	public void delete(Long id) {
+		EntityTransaction tx = em.getTransaction();
+	    tx.begin();
+		Query query = em.createQuery("delete Contact c where c.id=:id");
+		query.setParameter("id", id);
+		query.executeUpdate();
+		tx.commit();
+	}
 	
 	
 }

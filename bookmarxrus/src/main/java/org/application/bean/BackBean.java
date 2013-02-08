@@ -4,10 +4,16 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import org.application.FacesUtil;
 
 
 
@@ -22,8 +28,8 @@ public class BackBean implements Serializable{
 	
 	@Inject
 	private ContactDAO contactDAO;// = new ContactDAO();
-	@Inject
-	private FacesContext facesCtx;
+
+	
 	@Inject 
 	private ThemeDAO themeDAO;
 	
@@ -34,9 +40,6 @@ public class BackBean implements Serializable{
 	public BackBean() {
 		System.out.println("Backnean sendo instanciado");
 	}
-	
-	
-	
 	
 	public String getName() {
 		return name;
@@ -50,6 +53,7 @@ public class BackBean implements Serializable{
 		System.out.println("salvando bean");
 		Contact contact = new Contact();
 		contact.setNome(name);
+		contact.setEmail(email);
 		contactDAO.persist(contact);
 		return "list.xhtml";
 	}
@@ -82,6 +86,13 @@ public class BackBean implements Serializable{
 	public String edit() {
 		//String value = (String) facesCtx.getExternalContext().getRequestParameterMap().get("editParameter");
 		return "edit.xhtml";
+	}
+	
+	public String delete() {
+		String value = (String) FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("id");
+		contactDAO.delete(Long.valueOf(value));
+		FacesUtil.addSuccessMessage("Deletado!");
+		return "list.xhtml";
 	}
 	
 }

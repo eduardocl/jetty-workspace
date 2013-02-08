@@ -17,8 +17,6 @@
   
   <p:messages id="messages" showDetail="true" globalOnly="true" autoUpdate="true" closable="true" /> 
   
-  <p:growl autoUpdate="true" globalOnly="true" ></p:growl>
-  
   <p:dataTable value="#{backBean.contatos}" var="contato" >
   	<p:column headerText="id">
   		<p:outputLabel value="#{contato.id}"></p:outputLabel>
@@ -30,11 +28,7 @@
   		<p:outputLabel value="#{contato.email}"></p:outputLabel>
   	</p:column>
   	<p:column>
-  		<h:commandLink action="#{backBean.edit}" value="Editar" >
-  			<f:param name="id" value="#{contato.id}"></f:param>
-  		</h:commandLink>
-  		&nbsp;&nbsp;
-  		<h:commandLink action="#{backBean.delete}" value="Delete" >
+  		<h:commandLink action="#{backBean.edit}" value="#{contato.id}" >
   			<f:param name="id" value="#{contato.id}"></f:param>
   		</h:commandLink>
   	</p:column>

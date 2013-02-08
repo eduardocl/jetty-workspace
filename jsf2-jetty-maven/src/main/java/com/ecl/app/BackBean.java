@@ -54,5 +54,7 @@ public class BackBean {
 		return "home.xhtml";
 	}
 
-	
+	public String edit() {
+		return "edit.xhtml";
+	}
 }
