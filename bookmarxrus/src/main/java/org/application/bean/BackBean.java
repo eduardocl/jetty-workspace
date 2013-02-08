@@ -4,10 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.RequestScoped;
-import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -24,7 +22,8 @@ public class BackBean implements Serializable{
 	
 	@Inject
 	private ContactDAO contactDAO;// = new ContactDAO();
-	
+	@Inject
+	private FacesContext facesCtx;
 	@Inject 
 	private ThemeDAO themeDAO;
 	
@@ -77,6 +76,12 @@ public class BackBean implements Serializable{
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	
+	public String edit() {
+		//String value = (String) facesCtx.getExternalContext().getRequestParameterMap().get("editParameter");
+		return "edit.xhtml";
 	}
 	
 }

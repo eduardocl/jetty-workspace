@@ -1,5 +1,6 @@
 package org.application.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -12,7 +13,7 @@ import javax.persistence.Query;
 
 @Named
 @Singleton
-public class ContactDAO extends GenericDAO {
+public class ContactDAO extends GenericDAO implements Serializable{
 
 	@Inject
 	@DataRepository
@@ -26,6 +27,21 @@ public class ContactDAO extends GenericDAO {
 	
 	    tx.commit();
 	    //em.close();
+	}
+	
+	public Contact load(Long id) {
+		System.out.println("------------------------>" + id);
+	    
+	    Query query = em.createQuery("select d from Contact d where d.id =:id");
+	    query.setParameter("id", id);
+	    query.setMaxResults(1);
+	    Contact r = (Contact) query.getResultList().get(0);
+	    System.out.println("------> " + r);
+	    return r;
+	}
+	
+	public void update(Contact contact) {
+		em.merge(contact);
 	}
 	
 	@SuppressWarnings("unchecked")

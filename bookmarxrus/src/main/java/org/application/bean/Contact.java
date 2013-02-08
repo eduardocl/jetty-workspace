@@ -1,5 +1,7 @@
 package org.application.bean;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -7,21 +9,21 @@ import javax.persistence.Table;
 
 @Entity  
 @Table(name="tb_contact")  
-public class Contact {
+public class Contact implements Serializable{
 	
 	@GeneratedValue
 	@Id
-	private Long Id;
+	private Long id;
 
 	private String nome;
 	private String email;
 	
 	public Long getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getNome() {
@@ -41,6 +43,6 @@ public class Contact {
 	}
 	
 	public String toString() {
-		return this.nome + " " + this.email;
+		return this.id + " " + this.nome + " " + this.email;
 	}
 }

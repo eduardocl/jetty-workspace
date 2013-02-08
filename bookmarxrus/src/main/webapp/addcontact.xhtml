@@ -16,6 +16,8 @@
 	
 	<h:form>
 	
+		<p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" /> 
+	
 		<p:themeSwitcher style="width:165px" id="defaultSwitcher" value="#{themeSwitcherBean.themeSelected}"  >
             <f:selectItem itemLabel="Choose Theme" itemValue="" />
             <f:selectItems value="#{themeSwitcherBean.themes}" />
