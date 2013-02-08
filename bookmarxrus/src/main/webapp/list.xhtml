@@ -13,13 +13,13 @@
 </h:head>
 
 <h:body style="font-size:9pt;">
+
+  
+
   <h:form>
-  
-  <p:messages id="messages" showDetail="true" globalOnly="true" autoUpdate="true" closable="true" /> 
-  
-  <p:growl autoUpdate="true" globalOnly="true" ></p:growl>
-  
-  <p:dataTable value="#{backBean.contatos}" var="contato" >
+  	<p:growl autoUpdate="true" globalOnly="true" ></p:growl>
+	   
+  <p:dataTable value="#{backBean.contatos}" var="contato" id="contatos" >
   	<p:column headerText="id">
   		<p:outputLabel value="#{contato.id}"></p:outputLabel>
   	</p:column>
@@ -37,10 +37,23 @@
   		<h:commandLink action="#{backBean.delete}" value="Delete" >
   			<f:param name="id" value="#{contato.id}"></f:param>
   		</h:commandLink>
+  		&nbsp;&nbsp;
+  		<p:commandLink oncomplete="confirmation.show()" value="Delete" actionListener="#{backBean.contactToDelete}">
+  		 <p:ajax>
+  		 	<f:setPropertyActionListener target="#{backBean.idToDelete}" value="#{contato.id}" />
+  		 </p:ajax>				
+  		</p:commandLink>
   	</p:column>
   	
   </p:dataTable>
   <p:commandButton action="#{backBean.add}" ajax="false" value="add"></p:commandButton>
+  
+  	<p:confirmDialog id="confirmDialog" message="Are you sure about destroying the world?"
+				header="Initiating destroy process" severity="alert" widgetVar="confirmation">
+		<p:commandButton id="confirm" value="Yes" actionListener="#{backBean.remove}" update="contatos" oncomplete="confirmation.hide()" />
+		<p:commandButton id="decline" value="No" onclick="confirmation.hide()" type="button" /> 
+	</p:confirmDialog>
+  
   </h:form>
 </h:body>
 </html>

@@ -4,12 +4,10 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.context.SessionScoped;
-import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
+import javax.faces.event.ActionEvent;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -18,11 +16,12 @@ import org.application.FacesUtil;
 
 
 @Named
-@RequestScoped
+@SessionScoped
 public class BackBean implements Serializable{
 
 	private String name;
 	private String email;
+	private Long idToDelete;
 	
 	private List<Contact> contatos = new ArrayList<Contact>(); //Ebean.find(Contact.class).findList(); ;
 	
@@ -93,6 +92,30 @@ public class BackBean implements Serializable{
 		contactDAO.delete(Long.valueOf(value));
 		FacesUtil.addSuccessMessage("Deletado!");
 		return "list.xhtml";
+	}
+
+	public String remove(ActionEvent event) {
+		System.out.println("DELETANDO " + idToDelete);
+		contactDAO.delete(idToDelete);
+		FacesUtil.addSuccessMessage("Deletado!");
+		return "list.xhtml";
+	}
+	
+	public void setContactToDelete(Long id) {
+		System.out.println("----------------->" + id);
+	}
+	
+	public void contactToDelete() {
+		System.out.println("-------------------> " + idToDelete);
+	}
+	
+	public Long getIdToDelete() {
+		return idToDelete;
+	}
+
+	public void setIdToDelete(Long idToDelete) {
+		System.out.println("idToDelete: " + idToDelete);
+		this.idToDelete = idToDelete;
 	}
 	
 }
