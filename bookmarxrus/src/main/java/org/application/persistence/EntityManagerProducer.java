@@ -1,4 +1,4 @@
-package org.application.bean;
+package org.application.persistence;
 
 
 import javax.enterprise.inject.Produces;
@@ -12,7 +12,7 @@ import javax.persistence.Persistence;
  * conversation scoped entity manager for injection
  */
 @Singleton
-public class DataRepositoryProducer {
+public class EntityManagerProducer {
 
 	private static EntityManagerFactory factory;
 
@@ -25,7 +25,6 @@ public class DataRepositoryProducer {
 	}
 
 	@Produces
-	@DataRepository
 	public EntityManager produceEntityManager() {
 		return getEntityManagerFactory().createEntityManager();
 	}

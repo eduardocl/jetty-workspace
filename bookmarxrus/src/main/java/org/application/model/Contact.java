@@ -1,4 +1,4 @@
-package org.application.bean;
+package org.application.model;
 
 import java.io.Serializable;
 
@@ -14,8 +14,7 @@ public class Contact implements Serializable{
 	@GeneratedValue
 	@Id
 	private Long id;
-
-	private String nome;
+	private String name;
 	private String email;
 	
 	public Long getId() {
@@ -26,14 +25,15 @@ public class Contact implements Serializable{
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
-
+	
+	
 	public String getEmail() {
 		return email;
 	}
@@ -43,6 +43,6 @@ public class Contact implements Serializable{
 	}
 	
 	public String toString() {
-		return this.id + " " + this.nome + " " + this.email;
+		return this.id + " " + this.name + " " + this.email;
 	}
 }

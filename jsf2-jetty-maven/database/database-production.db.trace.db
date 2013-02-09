@@ -623,3 +623,4 @@ org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic c
 	at com.avaje.ebeaninternal.server.lib.sql.DataSourceGlobalManager.shutdown(DataSourceGlobalManager.java:45)
 	at com.avaje.ebeaninternal.server.lib.ShutdownManager.shutdown(ShutdownManager.java:186)
 	at com.avaje.ebeaninternal.server.lib.ShutdownHook.run(ShutdownHook.java:47)
+02-07 20:26:42 jdbc[2]: Connection not closed

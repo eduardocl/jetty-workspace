@@ -2,7 +2,7 @@ package org.application.controller;
 
 import javax.inject.Inject;
 
-import org.application.bean.ContactDAO;
+import org.application.persistence.ContactDAO;
 import org.application.qualifiers.BusinessController;
 
 

@@ -16,7 +16,7 @@ import javax.persistence.Query;
 public class ThemeDAO implements Serializable {
 
 	@Inject
-	@DataRepository
+	//@DataRepository
 	private EntityManager em;
 	
 	public void persist(Theme theme) {

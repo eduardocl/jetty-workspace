@@ -1,9 +1,8 @@
-package org.application.bean;
+package org.application.persistence;
 
 import java.io.Serializable;
 import java.util.List;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
@@ -11,13 +10,15 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 
+import org.application.bean.GenericDAO;
+import org.application.model.Contact;
+
 @Named
 @Singleton
 public class ContactDAO extends GenericDAO implements Serializable{
 
 	@Inject
-	@DataRepository
-	private EntityManager em; // = createEntityManager();
+	private EntityManager em; 
 	
 	public void persist(Contact contact) {
 		EntityTransaction tx = em.getTransaction();

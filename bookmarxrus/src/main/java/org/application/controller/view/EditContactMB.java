@@ -1,15 +1,16 @@
-package org.application.bean;
+package org.application.controller.view;
 
 import java.io.Serializable;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
-import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import org.application.model.Contact;
+import org.application.persistence.ContactDAO;
 
 @Named
 @RequestScoped
