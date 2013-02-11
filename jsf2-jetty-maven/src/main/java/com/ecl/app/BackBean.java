@@ -16,6 +16,7 @@ import com.avaje.ebean.config.dbplatform.PostgresPlatform;
 
 @ManagedBean(name="myBean")
 @SessionScoped
+//@ConversationScoped
 public class BackBean {
 
 	private String name;

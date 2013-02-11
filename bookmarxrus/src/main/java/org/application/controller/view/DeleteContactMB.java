@@ -8,11 +8,11 @@ import javax.inject.Named;
 
 import org.application.persistence.ContactDAO;
 
-import com.sun.javadoc.SerialFieldTag;
-
 @Named
 @SessionScoped
-public class DeleteContactMB implements Serializable{
+public class DeleteContactMB implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	@Inject
 	private ContactDAO contactDAO;

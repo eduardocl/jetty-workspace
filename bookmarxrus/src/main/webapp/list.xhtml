@@ -34,7 +34,7 @@
   		&nbsp;&nbsp;
   		<p:commandLink oncomplete="confirmation.show()" value="Delete">
   		  <!-- setting the object's id to delete -->	
-  		  <f:setPropertyActionListener target="#{contactMB.idToDelete}" value="#{contact.id}" />			
+  		  <f:setPropertyActionListener target="#{deleteContactMB.id}" value="#{contact.id}" />			
   		</p:commandLink>
   	</p:column>
   	
@@ -44,7 +44,7 @@
   
   	<p:confirmDialog id="confirmDialog" message="Delete this contact?"
 				header="Delete Contact" severity="alert" widgetVar="confirmation">
-		<p:commandButton id="confirm" value="Yes" actionListener="#{contactMB.remove}"
+		<p:commandButton id="confirm" value="Yes" actionListener="#{deleteContactMB.remove}"
 		 update="contacts" oncomplete="confirmation.hide()" />
 
 		<p:commandButton id="decline" value="No" onclick="confirmation.hide()" type="button" /> 

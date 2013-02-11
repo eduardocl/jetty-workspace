@@ -4,9 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.Conversation;
-import javax.enterprise.context.ConversationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -16,23 +14,25 @@ import org.application.model.Contact;
 import org.application.persistence.ContactDAO;
 
 @Named
-//@RequestScoped
-@ConversationScoped
+@RequestScoped
 public class ContactMB implements Serializable{
 
+	private static final long serialVersionUID = -1890125026548028469L;
 	private Contact bean = new Contact();
 	private Long idToDelete;
 	private List<Contact> contacts = new ArrayList<Contact>();
+	private String cid;
 	
+	public String getCid() {
+		return cid;
+	}
+
+	public void setCid(String cid) {
+		this.cid = cid;
+	}
+
 	@Inject
 	private ContactDAO contactDAO;
-	
-	@Inject private Conversation conversation;
-	
-	@PostConstruct
-	public void init(){
-		System.out.println("PostConstruct");
-	}
 	
 	public Contact getBean() {
 		return bean;
@@ -66,8 +66,6 @@ public class ContactMB implements Serializable{
 		System.out.println("Removing: " + idToDelete);
 		contactDAO.delete(idToDelete);
 		FacesUtil.addSuccessMessage("Deletado!");
-		//this.conversation.end();
-		//return "list.xhtml";
 	}
 	
 	public List<Contact> getContacts() {
@@ -83,10 +81,6 @@ public class ContactMB implements Serializable{
 	}
 
 	public void setIdToDelete(Long idToDelete) {
-		//if(this.conversation.isTransient()){
-		//	this.conversation.begin();
-		//}
-		System.out.println("======================= idToDelete: " + idToDelete);
 		this.idToDelete = idToDelete;
 	}
 	
