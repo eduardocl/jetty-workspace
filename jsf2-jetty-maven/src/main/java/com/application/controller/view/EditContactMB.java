@@ -10,7 +10,7 @@ import javax.faces.context.FacesContext;
 import com.avaje.ebean.Ebean;
 import com.ecl.app.Contact;
 
-@ManagedBean
+@ManagedBean(name="editContactMB")
 @RequestScoped
 public class EditContactMB implements Serializable{
 	
