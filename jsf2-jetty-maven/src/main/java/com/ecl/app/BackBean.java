@@ -14,7 +14,7 @@ import com.avaje.ebean.config.ServerConfig;
 import com.avaje.ebean.config.dbplatform.PostgresPlatform;
 
 
-@ManagedBean(name="myBean")
+//@ManagedBean(name="myBean")
 @SessionScoped
 //@ConversationScoped
 public class BackBean {
@@ -37,7 +37,7 @@ public class BackBean {
 	public String save() {
 		System.out.println("-----> " + name);
 		Contact contact = new Contact();
-		contact.setNome(name);
+		//contact.setNome(name);
 		Ebean.save(contact);
 		return "welcome.xhtml";
 	}

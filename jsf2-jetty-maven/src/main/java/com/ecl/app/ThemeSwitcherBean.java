@@ -10,8 +10,8 @@ import javax.faces.bean.ManagedBean;
 
 import com.avaje.ebean.Ebean;
 
-@ManagedBean
-@javax.faces.bean.SessionScoped
+//@ManagedBean
+//@javax.faces.bean.SessionScoped
 public class ThemeSwitcherBean implements Serializable{
         
     private Map<String, String> themes;
