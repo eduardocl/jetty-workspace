@@ -11,10 +11,12 @@
 	
 </h:head>
 <h:body style="font-size:9pt;">
+
 	<h:form>
 		<h:inputHidden value="#{editContactMB.bean.id}" />	
     	<p:inputText value="#{editContactMB.bean.name}"></p:inputText>
     	<p:inputText value="#{editContactMB.bean.email}"></p:inputText>
+    	
     	<p:commandButton ajax="false" value="Save" action="#{editContactMB.save}">
     		<f:param name="id" value="#{editContactMB.bean.id}"></f:param>
     	</p:commandButton>
