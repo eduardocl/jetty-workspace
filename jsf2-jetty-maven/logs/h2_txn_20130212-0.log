@@ -1,0 +1,547 @@
+txn[1001], 09:28:51.870, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 09:28:51.886, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15699] rows[1] name[] predicates[] bind[] 
+txn[1002], 09:28:51.888, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 09:28:51.888, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[339] rows[1] name[] predicates[] bind[] 
+txn[1001], 09:42:18.874, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 09:42:18.890, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15474] rows[1] name[] predicates[] bind[] 
+txn[1002], 09:42:18.892, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 09:42:18.893, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[344] rows[1] name[] predicates[] bind[] 
+txn[1003], 09:42:18.928, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 09:42:18.928, FindMany type[Contact] origin[BVTKrA.BJb2Bb.BvQztm] exeMicros[543] rows[7] name[] predicates[] bind[] 
+txn[1001], 09:43:12.314, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 09:43:12.330, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15354] rows[1] name[] predicates[] bind[] 
+txn[1002], 09:43:12.332, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 09:43:12.332, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[323] rows[1] name[] predicates[] bind[] 
+txn[1003], 09:43:12.368, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 09:43:12.369, FindMany type[Contact] origin[BVTKrA.BJb2Bb.BvQztm] exeMicros[529] rows[7] name[] predicates[] bind[] 
+txn[1001], 09:44:36.182, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 09:44:36.198, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[15507] rows[1] name[] predicates[] bind[] 
+txn[1002], 09:44:36.200, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 09:44:36.201, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[344] rows[1] name[] predicates[] bind[] 
+txn[1003], 09:44:36.236, select t0.id c0, t0.nome c1, t0.email c2  from tb_contact t0 
+txn[1003], 09:44:36.237, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[524] rows[7] name[] predicates[] bind[] 
+txn[1001], 09:45:45.073, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1001], 09:45:45.089, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[16434] rows[1] name[] predicates[] bind[] 
+txn[1002], 09:45:45.092, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1002], 09:45:45.092, FindMany type[Theme] origin[CcgMIR.B-txpS.Dd_Kuy] exeMicros[324] rows[1] name[] predicates[] bind[] 
+txn[1003], 09:45:45.129, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1003], 09:45:45.130, ERROR executing query:   bindLog[null] error[Column T0.NAME not found; SQL statement:\n select t0.id c0, t0.name c1, t0.email c2 \n from tb_contact t0 [42S22-65]] 
+txn[1003], 09:45:45.134, Rollback 
+txn[1003], 09:46:17.602, select t0.id c0, t0.theme c1  from tb_theme t0 
+txn[1003], 09:46:17.611, FindMany type[Theme] origin[B8DYxW.B-txpS.rWSbO] exeMicros[9249] rows[0] name[] predicates[] bind[] 
+txn[1003], 09:47:41.678, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1003], 09:47:41.687, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[9213] rows[0] name[] predicates[] bind[] 
+txn[1004], 09:47:41.691, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1004], 09:47:41.691, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[68] rows[0] name[] predicates[] bind[] 
+txn[1005], 09:47:43.425, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 09:47:43.426, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[127] rows[0] name[] predicates[] bind[] 
+txn[1006], 09:47:43.426, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1006], 09:47:43.426, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[29] rows[0] name[] predicates[] bind[] 
+txn[1007], 09:47:43.426, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 09:47:43.426, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[30] rows[0] name[] predicates[] bind[] 
+txn[1008], 09:47:43.427, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1008], 09:47:43.427, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[17] rows[0] name[] predicates[] bind[] 
+txn[1009], 09:47:43.428, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1009], 09:47:43.428, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[17] rows[0] name[] predicates[] bind[] 
+txn[1010], 09:47:43.428, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1010], 09:47:43.428, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[17] rows[0] name[] predicates[] bind[] 
+txn[1011], 09:47:43.429, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1011], 09:47:43.429, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[29] rows[0] name[] predicates[] bind[] 
+txn[1003], 11:40:18.104, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:40:18.114, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[9470] rows[0] name[] predicates[] bind[] 
+txn[1004], 11:40:18.118, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1004], 11:40:18.118, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[79] rows[0] name[] predicates[] bind[] 
+txn[1005], 11:40:22.500, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 11:40:22.500, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[89] rows[0] name[] predicates[] bind[] 
+txn[1006], 11:40:22.500, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1006], 11:40:22.501, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[32] rows[0] name[] predicates[] bind[] 
+txn[1007], 11:40:22.501, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 11:40:22.501, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[33] rows[0] name[] predicates[] bind[] 
+txn[1008], 11:40:22.502, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1008], 11:40:22.502, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[20] rows[0] name[] predicates[] bind[] 
+txn[1009], 11:40:22.503, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1009], 11:40:22.503, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[19] rows[0] name[] predicates[] bind[] 
+txn[1010], 11:40:22.503, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1010], 11:40:22.503, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[19] rows[0] name[] predicates[] bind[] 
+txn[1011], 11:40:22.504, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1011], 11:40:22.504, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[19] rows[0] name[] predicates[] bind[] 
+txn[1003], 11:40:52.783, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1003], 11:40:52.784, Binding Insert [tb_contact]  set[id=1, name=asd, email=asd, ] 
+txn[1003], 11:40:52.785, Inserted [Contact] [1] 
+txn[1004], 11:40:52.882, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1004], 11:40:52.885, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[2457] rows[1] name[] predicates[] bind[] 
+txn[1005], 11:40:52.899, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 11:40:52.899, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[84] rows[1] name[] predicates[] bind[] 
+txn[1006], 11:40:55.189, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1006], 11:40:55.190, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[276] rows[1] name[] predicates[] bind[] 
+txn[1007], 11:40:55.190, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 11:40:55.190, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[38] rows[1] name[] predicates[] bind[] 
+txn[1008], 11:40:55.191, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1008], 11:40:55.191, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[39] rows[1] name[] predicates[] bind[] 
+txn[1009], 11:40:55.191, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1009], 11:40:55.191, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[39] rows[1] name[] predicates[] bind[] 
+txn[1010], 11:40:55.192, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1010], 11:40:55.192, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[39] rows[1] name[] predicates[] bind[] 
+txn[1011], 11:40:55.193, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1011], 11:40:55.193, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[39] rows[1] name[] predicates[] bind[] 
+txn[1012], 11:40:55.193, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1012], 11:40:55.193, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[43] rows[1] name[] predicates[] bind[] 
+txn[1013], 11:40:57.881, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1013], 11:40:57.881, Binding Insert [tb_contact]  set[id=2, name=asdas, email=asdasd, ] 
+txn[1013], 11:40:57.881, Inserted [Contact] [2] 
+txn[1014], 11:40:57.890, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1014], 11:40:57.890, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[136] rows[2] name[] predicates[] bind[] 
+txn[1015], 11:40:57.893, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1015], 11:40:57.893, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[61] rows[2] name[] predicates[] bind[] 
+txn[1016], 11:40:59.251, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1016], 11:40:59.251, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[183] rows[2] name[] predicates[] bind[] 
+txn[1017], 11:40:59.252, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1017], 11:40:59.252, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[151] rows[2] name[] predicates[] bind[] 
+txn[1018], 11:40:59.253, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1018], 11:40:59.253, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[54] rows[2] name[] predicates[] bind[] 
+txn[1019], 11:40:59.254, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1019], 11:40:59.254, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[53] rows[2] name[] predicates[] bind[] 
+txn[1020], 11:40:59.255, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1020], 11:40:59.255, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[58] rows[2] name[] predicates[] bind[] 
+txn[1021], 11:40:59.255, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1021], 11:40:59.256, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[56] rows[2] name[] predicates[] bind[] 
+txn[1022], 11:40:59.256, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1022], 11:40:59.256, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1023], 11:41:01.919, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1023], 11:41:01.919, Binding Insert [tb_contact]  set[id=3, name=asdasd, email=asdad, ] 
+txn[1023], 11:41:01.919, Inserted [Contact] [3] 
+txn[1024], 11:41:01.930, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1024], 11:41:01.930, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[130] rows[3] name[] predicates[] bind[] 
+txn[1025], 11:41:01.938, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1025], 11:41:01.938, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[71] rows[3] name[] predicates[] bind[] 
+txn[1026], 11:41:03.498, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1026], 11:41:03.498, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[224] rows[3] name[] predicates[] bind[] 
+txn[1027], 11:41:03.499, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1027], 11:41:03.499, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[191] rows[3] name[] predicates[] bind[] 
+txn[1028], 11:41:03.501, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1028], 11:41:03.501, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[73] rows[3] name[] predicates[] bind[] 
+txn[1029], 11:41:03.501, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1029], 11:41:03.501, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[67] rows[3] name[] predicates[] bind[] 
+txn[1030], 11:41:03.502, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1030], 11:41:03.502, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[67] rows[3] name[] predicates[] bind[] 
+txn[1031], 11:41:03.503, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1031], 11:41:03.503, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[104] rows[3] name[] predicates[] bind[] 
+txn[1032], 11:41:03.503, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1032], 11:41:03.503, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[67] rows[3] name[] predicates[] bind[] 
+txn[1033], 11:41:03.504, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1033], 11:41:03.504, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[68] rows[3] name[] predicates[] bind[] 
+txn[1034], 11:41:03.516, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1034], 11:41:03.518, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[1796] rows[1] bind[1] 
+txn[1035], 11:41:07.180, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1035], 11:41:07.180, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[73] rows[1] bind[1] 
+txn[1036], 11:41:07.182, update tb_contact set email=? where id=? and name=? and email=? 
+txn[1036], 11:41:07.183, Binding Update [tb_contact]  set[email=asddddddddddddddddd, ] where[id=1, name=asd, email=asd, ] 
+txn[1036], 11:41:07.183, Updated [Contact] [1] 
+txn[1037], 11:42:19.229, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1037], 11:42:19.229, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[143] rows[3] name[] predicates[] bind[] 
+txn[1038], 11:42:19.234, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1038], 11:42:19.234, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[72] rows[3] name[] predicates[] bind[] 
+txn[1039], 11:42:22.167, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1039], 11:42:22.167, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[99] rows[3] name[] predicates[] bind[] 
+txn[1040], 11:42:22.168, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1040], 11:42:22.168, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[73] rows[3] name[] predicates[] bind[] 
+txn[1041], 11:42:22.168, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1041], 11:42:22.168, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[70] rows[3] name[] predicates[] bind[] 
+txn[1042], 11:42:22.169, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1042], 11:42:22.169, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[75] rows[3] name[] predicates[] bind[] 
+txn[1043], 11:42:22.170, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1043], 11:42:22.170, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[94] rows[3] name[] predicates[] bind[] 
+txn[1044], 11:42:22.171, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1044], 11:42:22.171, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[69] rows[3] name[] predicates[] bind[] 
+txn[1045], 11:42:22.171, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1045], 11:42:22.172, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[75] rows[3] name[] predicates[] bind[] 
+txn[1046], 11:42:22.172, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1046], 11:42:22.172, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[70] rows[3] name[] predicates[] bind[] 
+txn[1047], 11:42:22.176, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1047], 11:42:22.176, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[94] rows[1] bind[1] 
+txn[1048], 11:42:25.867, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1048], 11:42:25.867, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[74] rows[1] bind[1] 
+txn[1049], 11:42:25.868, update tb_contact set email=? where id=? and name=? and email=? 
+txn[1049], 11:42:25.868, Binding Update [tb_contact]  set[email=lops, ] where[id=1, name=asd, email=asddddddddddddddddd, ] 
+txn[1049], 11:42:25.868, Updated [Contact] [1] 
+txn[1050], 11:42:54.696, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1050], 11:42:54.697, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[141] rows[3] name[] predicates[] bind[] 
+txn[1051], 11:42:54.703, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1051], 11:42:54.703, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[95] rows[3] name[] predicates[] bind[] 
+txn[1052], 11:42:55.182, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1052], 11:42:55.182, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[101] rows[3] name[] predicates[] bind[] 
+txn[1053], 11:42:55.186, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1053], 11:42:55.186, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[71] rows[3] name[] predicates[] bind[] 
+txn[1054], 11:43:22.292, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1054], 11:43:22.293, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[244] rows[3] name[] predicates[] bind[] 
+txn[1055], 11:43:22.293, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1055], 11:43:22.294, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[193] rows[3] name[] predicates[] bind[] 
+txn[1056], 11:43:22.295, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1056], 11:43:22.296, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[192] rows[3] name[] predicates[] bind[] 
+txn[1057], 11:43:22.297, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1057], 11:43:22.297, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[192] rows[3] name[] predicates[] bind[] 
+txn[1058], 11:43:22.300, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1058], 11:43:22.300, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[192] rows[3] name[] predicates[] bind[] 
+txn[1059], 11:43:22.301, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1059], 11:43:22.301, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[193] rows[3] name[] predicates[] bind[] 
+txn[1060], 11:43:22.303, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1060], 11:43:22.303, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[192] rows[3] name[] predicates[] bind[] 
+txn[1061], 11:43:22.304, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1061], 11:43:22.305, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[365] rows[3] name[] predicates[] bind[] 
+txn[1062], 11:43:23.454, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1062], 11:43:23.454, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[238] rows[3] name[] predicates[] bind[] 
+txn[1063], 11:43:23.455, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1063], 11:43:23.455, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[69] rows[3] name[] predicates[] bind[] 
+txn[1064], 11:43:23.455, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1064], 11:43:23.456, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[222] rows[3] name[] predicates[] bind[] 
+txn[1065], 11:43:23.457, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1065], 11:43:23.457, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[193] rows[3] name[] predicates[] bind[] 
+txn[1066], 11:43:23.460, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1066], 11:43:23.460, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[191] rows[3] name[] predicates[] bind[] 
+txn[1067], 11:43:23.461, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1067], 11:43:23.461, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[192] rows[3] name[] predicates[] bind[] 
+txn[1068], 11:43:23.463, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1068], 11:43:23.463, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[192] rows[3] name[] predicates[] bind[] 
+txn[1069], 11:43:23.474, -- Deleting Contact Idsnull 
+txn[1069], 11:43:23.476, delete from tb_contact where id = ?  
+txn[1069], 11:43:23.477, DeleteSql table[tb_contact] rows[1] bind[1, ] 
+txn[1070], 11:43:23.480, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1070], 11:43:23.480, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[105] rows[2] name[] predicates[] bind[] 
+txn[1071], 11:43:23.481, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1071], 11:43:23.481, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[53] rows[2] name[] predicates[] bind[] 
+txn[1072], 11:43:23.488, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1072], 11:43:23.488, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[56] rows[2] name[] predicates[] bind[] 
+txn[1073], 11:43:23.488, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1073], 11:43:23.488, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1074], 11:43:37.436, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1074], 11:43:37.436, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[181] rows[2] name[] predicates[] bind[] 
+txn[1075], 11:43:37.437, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1075], 11:43:37.437, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[148] rows[2] name[] predicates[] bind[] 
+txn[1076], 11:43:37.438, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1076], 11:43:37.438, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1077], 11:43:37.438, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1077], 11:43:37.438, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1078], 11:43:37.439, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1078], 11:43:37.439, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1079], 11:43:37.440, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1079], 11:43:37.440, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1080], 11:43:37.440, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1080], 11:43:37.440, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[54] rows[2] name[] predicates[] bind[] 
+txn[1081], 11:43:37.441, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1081], 11:43:37.441, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1082], 11:43:39.350, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1082], 11:43:39.350, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[180] rows[2] name[] predicates[] bind[] 
+txn[1083], 11:43:39.351, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1083], 11:43:39.351, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[148] rows[2] name[] predicates[] bind[] 
+txn[1084], 11:43:39.353, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1084], 11:43:39.353, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[149] rows[2] name[] predicates[] bind[] 
+txn[1085], 11:43:39.354, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1085], 11:43:39.354, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[149] rows[2] name[] predicates[] bind[] 
+txn[1086], 11:43:39.356, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1086], 11:43:39.356, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[213] rows[2] name[] predicates[] bind[] 
+txn[1087], 11:43:39.357, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1087], 11:43:39.357, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1088], 11:43:39.357, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1088], 11:43:39.357, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[67] rows[2] name[] predicates[] bind[] 
+txn[1089], 11:43:39.358, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1089], 11:43:39.358, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[54] rows[2] name[] predicates[] bind[] 
+txn[1090], 11:43:41.147, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1090], 11:43:41.147, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[82] rows[2] name[] predicates[] bind[] 
+txn[1091], 11:43:41.147, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1091], 11:43:41.147, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[58] rows[2] name[] predicates[] bind[] 
+txn[1092], 11:43:41.148, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1092], 11:43:41.148, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[59] rows[2] name[] predicates[] bind[] 
+txn[1093], 11:43:41.149, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1093], 11:43:41.149, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[59] rows[2] name[] predicates[] bind[] 
+txn[1094], 11:43:41.150, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1094], 11:43:41.150, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1095], 11:43:41.150, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1095], 11:43:41.150, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1096], 11:43:41.151, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1096], 11:43:41.151, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1097], 11:43:41.151, -- Deleting Contact Idsnull 
+txn[1097], 11:43:41.151, delete from tb_contact where id = ?  
+txn[1097], 11:43:41.151, DeleteSql table[tb_contact] rows[1] bind[2, ] 
+txn[1098], 11:43:41.154, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1098], 11:43:41.154, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[71] rows[1] name[] predicates[] bind[] 
+txn[1099], 11:43:41.155, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1099], 11:43:41.155, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[39] rows[1] name[] predicates[] bind[] 
+txn[1100], 11:43:41.156, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1100], 11:43:41.156, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[42] rows[1] name[] predicates[] bind[] 
+txn[1101], 11:43:41.157, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1101], 11:43:41.157, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[42] rows[1] name[] predicates[] bind[] 
+txn[1102], 11:43:42.409, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1102], 11:43:42.409, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[137] rows[1] name[] predicates[] bind[] 
+txn[1103], 11:43:42.410, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1103], 11:43:42.410, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[104] rows[1] name[] predicates[] bind[] 
+txn[1104], 11:43:42.411, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1104], 11:43:42.411, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[105] rows[1] name[] predicates[] bind[] 
+txn[1105], 11:43:42.413, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1105], 11:43:42.413, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[105] rows[1] name[] predicates[] bind[] 
+txn[1106], 11:43:42.414, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1106], 11:43:42.414, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[104] rows[1] name[] predicates[] bind[] 
+txn[1107], 11:43:42.415, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1107], 11:43:42.415, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[104] rows[1] name[] predicates[] bind[] 
+txn[1108], 11:43:42.416, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1108], 11:43:42.416, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[159] rows[1] name[] predicates[] bind[] 
+txn[1109], 11:43:47.801, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1109], 11:43:47.802, Binding Insert [tb_contact]  set[id=4, name=Edaurdo, email=Lopes, ] 
+txn[1109], 11:43:47.802, Inserted [Contact] [4] 
+txn[1110], 11:43:47.809, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1110], 11:43:47.809, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[117] rows[2] name[] predicates[] bind[] 
+txn[1111], 11:43:47.811, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1111], 11:43:47.811, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1112], 11:43:49.522, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1112], 11:43:49.522, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[80] rows[2] name[] predicates[] bind[] 
+txn[1113], 11:43:49.522, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1113], 11:43:49.522, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1114], 11:43:49.523, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1114], 11:43:49.523, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1115], 11:43:49.523, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1115], 11:43:49.524, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[70] rows[2] name[] predicates[] bind[] 
+txn[1116], 11:43:49.524, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1116], 11:43:49.524, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[65] rows[2] name[] predicates[] bind[] 
+txn[1117], 11:43:49.525, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1117], 11:43:49.525, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1118], 11:43:49.525, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1118], 11:43:49.525, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[62] rows[2] name[] predicates[] bind[] 
+txn[1119], 11:43:49.526, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1119], 11:43:49.526, FindMany type[Contact] origin[BVTKq5.BJb2Bb.Cx-WJv] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1120], 11:43:49.531, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1120], 11:43:49.531, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[178] rows[1] bind[4] 
+txn[1121], 11:43:55.858, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1121], 11:43:55.858, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[72] rows[1] bind[4] 
+txn[1122], 11:43:55.859, update tb_contact set email=? where id=? and name=? and email=? 
+txn[1122], 11:43:55.859, Binding Update [tb_contact]  set[email=Lopesvvvv, ] where[id=4, name=Edaurdo, email=Lopes, ] 
+txn[1122], 11:43:55.859, Updated [Contact] [4] 
+txn[1002], 11:46:09.173, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1002], 11:46:09.195, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[21473] rows[2] name[] predicates[] bind[] 
+txn[1001], 11:46:09.173, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1001], 11:46:09.195, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[21472] rows[2] name[] predicates[] bind[] 
+txn[1003], 11:46:09.241, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:46:09.243, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[1727] rows[2] name[] predicates[] bind[] 
+txn[1004], 11:46:09.244, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1004], 11:46:09.244, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[285] rows[2] name[] predicates[] bind[] 
+txn[1005], 11:46:12.011, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 11:46:12.011, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[96] rows[2] name[] predicates[] bind[] 
+txn[1006], 11:46:12.011, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1006], 11:46:12.011, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[68] rows[2] name[] predicates[] bind[] 
+txn[1007], 11:46:12.012, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 11:46:12.012, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[55] rows[2] name[] predicates[] bind[] 
+txn[1008], 11:46:12.013, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1008], 11:46:12.014, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[54] rows[2] name[] predicates[] bind[] 
+txn[1009], 11:46:12.015, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1009], 11:46:12.015, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[53] rows[2] name[] predicates[] bind[] 
+txn[1010], 11:46:12.015, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1010], 11:46:12.015, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[54] rows[2] name[] predicates[] bind[] 
+txn[1011], 11:46:12.016, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1011], 11:46:12.016, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[53] rows[2] name[] predicates[] bind[] 
+txn[1012], 11:46:15.308, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1012], 11:46:15.309, Binding Insert [tb_contact]  set[id=33, name=sadfsdf, email=sdfsdf, ] 
+txn[1012], 11:46:15.311, Inserted [Contact] [33] 
+txn[1013], 11:46:15.318, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1013], 11:46:15.318, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[182] rows[3] name[] predicates[] bind[] 
+txn[1014], 11:46:15.325, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1014], 11:46:15.325, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[127] rows[3] name[] predicates[] bind[] 
+txn[1015], 11:46:16.539, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1015], 11:46:16.539, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[90] rows[3] name[] predicates[] bind[] 
+txn[1016], 11:46:16.539, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1016], 11:46:16.539, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[68] rows[3] name[] predicates[] bind[] 
+txn[1017], 11:46:16.540, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1017], 11:46:16.540, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[72] rows[3] name[] predicates[] bind[] 
+txn[1018], 11:46:16.541, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1018], 11:46:16.541, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[68] rows[3] name[] predicates[] bind[] 
+txn[1019], 11:46:16.542, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1019], 11:46:16.542, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[68] rows[3] name[] predicates[] bind[] 
+txn[1020], 11:46:16.542, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1020], 11:46:16.542, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[73] rows[3] name[] predicates[] bind[] 
+txn[1021], 11:46:16.543, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1021], 11:46:16.543, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[68] rows[3] name[] predicates[] bind[] 
+txn[1022], 11:46:19.000, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1022], 11:46:19.000, Binding Insert [tb_contact]  set[id=34, name=sdfsdf, email=sdfsdf, ] 
+txn[1022], 11:46:19.000, Inserted [Contact] [34] 
+txn[1023], 11:46:19.006, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1023], 11:46:19.006, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[165] rows[4] name[] predicates[] bind[] 
+txn[1024], 11:46:19.013, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1024], 11:46:19.013, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[157] rows[4] name[] predicates[] bind[] 
+txn[1025], 11:46:20.244, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1025], 11:46:20.245, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[294] rows[4] name[] predicates[] bind[] 
+txn[1026], 11:46:20.245, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1026], 11:46:20.246, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[241] rows[4] name[] predicates[] bind[] 
+txn[1027], 11:46:20.248, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1027], 11:46:20.248, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[240] rows[4] name[] predicates[] bind[] 
+txn[1028], 11:46:20.250, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1028], 11:46:20.250, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[240] rows[4] name[] predicates[] bind[] 
+txn[1029], 11:46:20.254, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1029], 11:46:20.254, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[265] rows[4] name[] predicates[] bind[] 
+txn[1030], 11:46:20.256, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1030], 11:46:20.256, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[240] rows[4] name[] predicates[] bind[] 
+txn[1031], 11:46:20.257, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1031], 11:46:20.257, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[83] rows[4] name[] predicates[] bind[] 
+txn[1032], 11:46:22.847, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1032], 11:46:22.847, Binding Insert [tb_contact]  set[id=35, name=asdfasdf, email=asdfasdf, ] 
+txn[1032], 11:46:22.847, Inserted [Contact] [35] 
+txn[1033], 11:46:22.853, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1033], 11:46:22.853, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[220] rows[5] name[] predicates[] bind[] 
+txn[1034], 11:46:22.865, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1034], 11:46:22.865, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[288] rows[5] name[] predicates[] bind[] 
+txn[1035], 11:46:23.921, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1035], 11:46:23.921, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[308] rows[5] name[] predicates[] bind[] 
+txn[1036], 11:46:23.922, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1036], 11:46:23.922, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[278] rows[5] name[] predicates[] bind[] 
+txn[1037], 11:46:23.926, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1037], 11:46:23.926, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[102] rows[5] name[] predicates[] bind[] 
+txn[1038], 11:46:23.926, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1038], 11:46:23.926, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[99] rows[5] name[] predicates[] bind[] 
+txn[1039], 11:46:23.928, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1039], 11:46:23.928, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[99] rows[5] name[] predicates[] bind[] 
+txn[1040], 11:46:23.928, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1040], 11:46:23.929, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[105] rows[5] name[] predicates[] bind[] 
+txn[1041], 11:46:23.929, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1041], 11:46:23.930, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[114] rows[5] name[] predicates[] bind[] 
+txn[1042], 11:46:26.990, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1042], 11:46:26.990, Binding Insert [tb_contact]  set[id=36, name=asdfasdfas, email=asdfasdfasdf, ] 
+txn[1042], 11:46:26.990, Inserted [Contact] [36] 
+txn[1043], 11:46:26.995, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1043], 11:46:26.996, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[222] rows[6] name[] predicates[] bind[] 
+txn[1044], 11:46:27.005, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1044], 11:46:27.005, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BM1YDs] exeMicros[195] rows[6] name[] predicates[] bind[] 
+txn[1001], 11:47:33.150, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1001], 11:47:33.166, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[16485] rows[6] name[] predicates[] bind[] 
+txn[1002], 11:47:33.195, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1002], 11:47:33.195, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[412] rows[6] name[] predicates[] bind[] 
+txn[1003], 11:47:36.424, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:47:36.425, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[595] rows[6] name[] predicates[] bind[] 
+txn[1004], 11:47:36.425, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1004], 11:47:36.426, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[326] rows[6] name[] predicates[] bind[] 
+txn[1005], 11:47:36.428, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 11:47:36.429, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[127] rows[6] name[] predicates[] bind[] 
+txn[1006], 11:47:36.430, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1006], 11:47:36.430, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[112] rows[6] name[] predicates[] bind[] 
+txn[1007], 11:47:36.432, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 11:47:36.432, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[112] rows[6] name[] predicates[] bind[] 
+txn[1008], 11:47:36.433, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1008], 11:47:36.433, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[121] rows[6] name[] predicates[] bind[] 
+txn[1009], 11:47:36.434, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1009], 11:47:36.434, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[116] rows[6] name[] predicates[] bind[] 
+txn[1010], 11:47:40.203, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1010], 11:47:40.203, Binding Insert [tb_contact]  set[id=41, name=dsdsds, email=sdsdsd, ] 
+txn[1010], 11:47:40.205, Inserted [Contact] [41] 
+txn[1011], 11:47:40.211, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1011], 11:47:40.212, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[369] rows[7] name[] predicates[] bind[] 
+txn[1012], 11:47:40.222, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1012], 11:47:40.223, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[128] rows[7] name[] predicates[] bind[] 
+txn[1013], 11:47:42.452, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1013], 11:47:42.452, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[167] rows[7] name[] predicates[] bind[] 
+txn[1014], 11:47:42.452, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1014], 11:47:42.453, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[143] rows[7] name[] predicates[] bind[] 
+txn[1015], 11:47:42.454, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1015], 11:47:42.454, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[143] rows[7] name[] predicates[] bind[] 
+txn[1016], 11:47:42.455, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1016], 11:47:42.455, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[142] rows[7] name[] predicates[] bind[] 
+txn[1017], 11:47:42.457, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1017], 11:47:42.458, FindMany type[Contact] origin[BVTKq5.BJb2Bb.BvQztm] exeMicros[144] rows[7] name[] predicates[] bind[] 
+txn[1018], 11:47:42.458, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1018], 11:47:42.458, FindMany type[Contact] origin[BVTKq5.BJb2Bb.CBu7wt] exeMicros[143] rows[7] name[] predicates[] bind[] 
+txn[1019], 11:47:42.459, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1019], 11:47:42.459, FindMany type[Contact] origin[BVTKq5.BJb2Bb.CBu7wt] exeMicros[142] rows[7] name[] predicates[] bind[] 
+txn[1020], 11:47:42.460, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1020], 11:47:42.460, FindMany type[Contact] origin[BVTKq5.BJb2Bb.CBu7wt] exeMicros[143] rows[7] name[] predicates[] bind[] 
+txn[1021], 11:47:42.473, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1021], 11:47:42.475, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[1907] rows[1] bind[41] 
+txn[1022], 11:47:43.730, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1022], 11:47:43.730, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[76] rows[1] bind[41] 
+txn[1001], 11:48:49.386, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1001], 11:48:49.401, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[15499] rows[7] name[] predicates[] bind[] 
+txn[1002], 11:48:49.469, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1002], 11:48:49.470, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[1004] rows[7] name[] predicates[] bind[] 
+txn[1003], 11:48:53.777, -- Deleting Contact Idsnull 
+txn[1003], 11:48:53.780, delete from tb_contact where id = ?  
+txn[1003], 11:48:53.785, DeleteSql table[tb_contact] rows[1] bind[41, ] 
+txn[1004], 11:48:56.544, -- Deleting Contact Idsnull 
+txn[1004], 11:48:56.544, delete from tb_contact where id = ?  
+txn[1004], 11:48:56.544, DeleteSql table[tb_contact] rows[1] bind[33, ] 
+txn[1005], 11:48:59.228, -- Deleting Contact Idsnull 
+txn[1005], 11:48:59.228, delete from tb_contact where id = ?  
+txn[1005], 11:48:59.228, DeleteSql table[tb_contact] rows[1] bind[3, ] 
+txn[1006], 11:49:02.544, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1006], 11:49:02.545, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[513] rows[4] name[] predicates[] bind[] 
+txn[1001], 11:51:26.755, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1001], 11:51:26.791, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[35506] rows[4] name[] predicates[] bind[] 
+txn[1002], 11:51:29.993, -- Deleting Contact Idsnull 
+txn[1002], 11:51:29.997, delete from tb_contact where id = ?  
+txn[1002], 11:51:30.002, DeleteSql table[tb_contact] rows[1] bind[36, ] 
+txn[1003], 11:51:30.004, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1003], 11:51:30.004, FindMany type[Contact] origin[0VpEC.BJb2Bb.DasCs_] exeMicros[205] rows[3] name[] predicates[] bind[] 
+txn[1004], 11:51:33.390, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1004], 11:51:33.390, Binding Insert [tb_contact]  set[id=65, name=sd, email=sd, ] 
+txn[1004], 11:51:33.390, Inserted [Contact] [65] 
+txn[1005], 11:51:33.396, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 11:51:33.396, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[186] rows[4] name[] predicates[] bind[] 
+txn[1006], 11:51:36.852, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1006], 11:51:36.852, Binding Insert [tb_contact]  set[id=66, name=sdsd, email=sdsd, ] 
+txn[1006], 11:51:36.852, Inserted [Contact] [66] 
+txn[1007], 11:51:36.862, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 11:51:36.862, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[207] rows[5] name[] predicates[] bind[] 
+txn[1008], 11:51:40.410, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1008], 11:51:40.410, Binding Insert [tb_contact]  set[id=67, name=sdsd, email=sdsd, ] 
+txn[1008], 11:51:40.411, Inserted [Contact] [67] 
+txn[1009], 11:51:40.416, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1009], 11:51:40.417, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[264] rows[6] name[] predicates[] bind[] 
+txn[1010], 11:51:46.355, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1010], 11:51:46.355, Binding Insert [tb_contact]  set[id=68, name=ad, email=sdf, ] 
+txn[1010], 11:51:46.355, Inserted [Contact] [68] 
+txn[1011], 11:51:46.365, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1011], 11:51:46.366, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[283] rows[7] name[] predicates[] bind[] 
+txn[1012], 11:51:48.588, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1012], 11:51:48.588, FindMany type[Contact] origin[rnIkZ.BJb2Bb.rWSbO] exeMicros[180] rows[7] name[] predicates[] bind[] 
+txn[1013], 11:51:48.600, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1013], 11:51:48.600, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[283] rows[1] bind[68] 
+txn[1014], 11:51:50.255, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1014], 11:51:50.255, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[81] rows[1] bind[68] 
+txn[1015], 11:51:50.256, update tb_contact set email=? where id=? and name=? and email=? 
+txn[1015], 11:51:50.258, Binding Update [tb_contact]  set[email=sdffff, ] where[id=68, name=ad, email=sdf, ] 
+txn[1015], 11:51:50.258, Updated [Contact] [68] 
+txn[1001], 11:54:44.150, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1001], 11:54:44.151, Binding Insert [tb_contact]  set[id=97, name=czxc, email=zxczxc, ] 
+txn[1001], 11:54:44.153, Inserted [Contact] [97] 
+txn[1002], 11:54:48.768, insert into tb_contact (id, name, email) values (?,?,?) 
+txn[1002], 11:54:48.768, Binding Insert [tb_contact]  set[id=98, name=zxczxc, email=zxczxc, ] 
+txn[1002], 11:54:48.768, Inserted [Contact] [98] 
+txn[1002], 11:55:48.030, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1002], 11:55:48.051, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[21281] rows[9] name[] predicates[] bind[] 
+txn[1001], 11:55:48.030, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1001], 11:55:48.051, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[21281] rows[9] name[] predicates[] bind[] 
+txn[1003], 11:55:52.653, -- Deleting Contact Idsnull 
+txn[1003], 11:55:52.657, delete from tb_contact where id = ?  
+txn[1003], 11:55:52.663, DeleteSql table[tb_contact] rows[1] bind[97, ] 
+txn[1004], 11:55:52.665, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1004], 11:55:52.665, FindMany type[Contact] origin[0VpED.BJb2Bb.DasJ-e] exeMicros[790] rows[8] name[] predicates[] bind[] 
+txn[1005], 11:55:54.670, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1005], 11:55:54.671, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[369] rows[8] name[] predicates[] bind[] 
+txn[1006], 11:55:54.696, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1006], 11:55:54.697, FindBean type[Contact] origin[D10Rgb.BJb2Ba.rWSbO] exeMicros[1067] rows[1] bind[98] 
+txn[1007], 11:56:19.769, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1007], 11:56:19.770, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[510] rows[8] name[] predicates[] bind[] 
+txn[1008], 11:56:19.776, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1008], 11:56:19.776, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[186] rows[8] name[] predicates[] bind[] 
+txn[1009], 11:56:19.779, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1009], 11:56:19.780, FindBean type[Contact] origin[D10Rgb.BJb2Ba.rWSbO] exeMicros[298] rows[1] bind[4] 
+txn[1010], 11:56:26.511, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1010], 11:56:26.511, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[168] rows[8] name[] predicates[] bind[] 
+txn[1011], 11:56:27.446, -- Deleting Contact Idsnull 
+txn[1011], 11:56:27.446, delete from tb_contact where id = ?  
+txn[1011], 11:56:27.446, DeleteSql table[tb_contact] rows[1] bind[34, ] 
+txn[1012], 11:56:27.446, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1012], 11:56:27.446, FindMany type[Contact] origin[0VpED.BJb2Bb.DasJ-e] exeMicros[264] rows[7] name[] predicates[] bind[] 
+txn[1013], 11:56:29.808, -- Deleting Contact Idsnull 
+txn[1013], 11:56:29.808, delete from tb_contact where id = ?  
+txn[1013], 11:56:29.808, DeleteSql table[tb_contact] rows[1] bind[4, ] 
+txn[1014], 11:56:29.808, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1014], 11:56:29.808, FindMany type[Contact] origin[0VpED.BJb2Bb.DasJ-e] exeMicros[227] rows[6] name[] predicates[] bind[] 
+txn[1001], 11:57:22.463, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1001], 11:57:22.478, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[15379] rows[6] name[] predicates[] bind[] 
+txn[1002], 11:57:32.990, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 
+txn[1002], 11:57:32.990, FindMany type[Contact] origin[0VpED.BJb2Bb.DOkaV2] exeMicros[685] rows[6] name[] predicates[] bind[] 
+txn[1003], 11:57:33.020, select t0.id c0, t0.name c1, t0.email c2  from tb_contact t0 where t0.id = ?   
+txn[1003], 11:57:33.023, FindBean type[Contact] origin[Db-Oby.BJb2Ba.rWSbO] exeMicros[3070] rows[1] bind[98] 

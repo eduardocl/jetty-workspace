@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	
+	<title>JSF Demo</title>
+</h:head>
+<h:body style="font-size:9pt;">
+	
+	
+	<h:form>
+	
+		<p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" /> 
+		<h:outputLabel value="Name" for="name" />
+		<p:inputText id="name" value="#{addContactMB.contact.name}"/>
+		<p:outputLabel value="Email" for="email"  />
+		<p:inputText id="email"  value="#{addContactMB.contact.email}"/>
+    	<p:commandButton value="Save" ajax="false" action="#{addContactMB.save}" ></p:commandButton>
+    	
+    	
+	</h:form>
+
+</h:body>
+</html>
