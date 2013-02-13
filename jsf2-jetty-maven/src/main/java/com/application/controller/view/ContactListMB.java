@@ -5,8 +5,8 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
+import com.application.domain.Contact;
 import com.avaje.ebean.Ebean;
-import com.ecl.app.Contact;
 
 
 @ManagedBean(name="contactMB")
@@ -41,11 +41,12 @@ public class ContactListMB {
 	}
 
 	public String edit() {
-		return "edit.xhtml";
+		return "update.xhtml";
 	}
 
 	public void remove() {
 		Ebean.delete(Contact.class, idToDelete);
+		FacesUtil.addSuccessMessage("Contact deleted.");
 		setContacts(getContactList());
 	}
 	

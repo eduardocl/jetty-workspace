@@ -2,13 +2,12 @@ package com.application.controller.view;
 
 import java.io.Serializable;
 
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
+import com.application.domain.Contact;
 import com.avaje.ebean.Ebean;
-import com.ecl.app.Contact;
 
 @ManagedBean(name="editContactMB")
 @RequestScoped
@@ -32,9 +31,9 @@ public class EditContactMB implements Serializable{
 	}
 	
 	public String save() {
-		System.out.println(bean);
+		System.out.println("Saving " + bean);
 		Ebean.update(bean);
-		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,"Editado!", "PrimeFaces rocks!"));
+		FacesUtil.addSuccessMessage("Contact edited");
 		return "list.xhtml";
 	}
 	

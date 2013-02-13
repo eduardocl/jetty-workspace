@@ -8,21 +8,28 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-	
-	<title>JSF Demo</title>
+	<title>Contact List</title>
 </h:head>
 <h:body style="font-size:9pt;">
 	
 	
 	<h:form>
-	
-		<p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" /> 
+	  <h:panelGrid columns="3">
+		
 		<h:outputLabel value="Name" for="name" />
-		<p:inputText id="name" value="#{addContactMB.contact.name}"/>
+		<p:inputText id="name" value="#{addContactMB.contact.name}" 
+			required="true" requiredMessage="Name cannot be empty." label="Name" />
+		<p:message for="name"/>
+		
 		<p:outputLabel value="Email" for="email"  />
-		<p:inputText id="email"  value="#{addContactMB.contact.email}"/>
-    	<p:commandButton value="Save" ajax="false" action="#{addContactMB.save}" ></p:commandButton>
-    	
+		<p:inputText id="email"  value="#{addContactMB.contact.email}" 
+			required="true" requiredMessage="Email cannot be empty." label="Email" />
+		<p:message for="email"/>
+		
+		<f:facet name="footer">
+    		<p:commandButton value="Save" ajax="false" action="#{addContactMB.save}" ></p:commandButton>
+    	</f:facet>
+     </h:panelGrid>	
     	
 	</h:form>
 

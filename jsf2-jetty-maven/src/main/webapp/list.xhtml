@@ -14,8 +14,9 @@
 
 <h:body style="font-size:9pt;">
 
+
   <h:form>
-  	<p:growl autoUpdate="true" globalOnly="true" ></p:growl>
+  	<p:growl autoUpdate="true" globalOnly="true" sticky="true" ></p:growl>
 	   
   <p:dataTable value="#{contactMB.contacts}" var="contact" id="contacts" >
   	<p:column headerText="id">
@@ -39,7 +40,7 @@
   	</p:column>
   	
   </p:dataTable>
-  
+
   <p:commandButton action="#{contactMB.add}" ajax="false" value="Add Contact"></p:commandButton>
   
   	<p:confirmDialog id="confirmDialog" message="Delete this contact?"
@@ -51,5 +52,6 @@
 	</p:confirmDialog>
   
   </h:form>
+
 </h:body>
 </html>

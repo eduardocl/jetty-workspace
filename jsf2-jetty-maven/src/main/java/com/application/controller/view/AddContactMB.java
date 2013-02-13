@@ -3,8 +3,8 @@ package com.application.controller.view;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
+import com.application.domain.Contact;
 import com.avaje.ebean.Ebean;
-import com.ecl.app.Contact;
 
 @ManagedBean(name="addContactMB")
 @RequestScoped
@@ -22,6 +22,7 @@ public class AddContactMB {
 	
 	public String save() {
 		Ebean.save(contact);
+		FacesUtil.addSuccessMessage("New contact added.");
 		return "list.xhtml";
 	}
 }
