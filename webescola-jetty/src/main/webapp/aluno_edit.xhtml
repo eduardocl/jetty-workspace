@@ -1,0 +1,109 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/template/main.xhtml">
+
+	<ui:define name="body">
+		<h:form rendered="#{securityContext.loggedIn}" prependId="false"
+			id="form">
+
+			<p:toolbar>
+				<p:toolbarGroup align="left">
+					<p:commandButton value="#{messages['button.save']}"
+						action="#{alunoEditMB.insert}"
+						rendered="#{!bookmarkEditMB.updateMode}" ajax="false" />
+
+					<p:commandButton value="#{messages['button.save']}"
+						action="#{alunoEditMB.update}"
+						rendered="#{bookmarkEditMB.updateMode}" ajax="false" />
+
+					<p:commandButton value="#{messages['button.delete']}"
+						onclick="confirmation.show()"
+						rendered="#{bookmarkEditMB.updateMode}" type="button"
+						immediate="true" ajax="false" />
+
+					<p:confirmDialog message="#{messages['label.confirm.delete']}"
+						showEffect="bounce" hideEffect="explode"
+						header="#{messages['label.dialog.delete']}" severity="alert"
+						widgetVar="confirmation">
+
+						<h:commandButton value="#{messages['button.dialog.yes']}"
+							action="#{alunoEditMB.delete}" immediate="true" ajax="false" />
+
+						<h:commandButton value="#{messages['button.dialog.no']}"
+							onclick="confirmation.hide()" type="button" />
+					</p:confirmDialog>
+				</p:toolbarGroup>
+			</p:toolbar>
+			
+			<br/>
+			<p:fieldset legend="#{messages['aluno.new.label']}" toggleable="true" toggleSpeed="500">
+				<h:panelGrid id="fields" columns="3">
+					<h:outputLabel value="#{messages['bookmark.label.id']}: " for="id" styleClass="text-input" />
+					<h:outputText id="id" value="#{alunoEditMB.bean.id}" />
+					<p:message for="id" />
+
+					<h:outputLabel value="#{messages['aluno.label.nome']}: " for="nome" styleClass="text-input" />
+					<h:inputText id="nome" value="#{alunoEditMB.bean.nome}"
+						title="#{messages['aluno.alt.nome']}" required="true" label="Nome" >
+						
+					</h:inputText>
+					<p:message for="nome" />
+					
+					
+					<h:outputLabel value="CPF:" for="cpf" styleClass="text-input"/>
+					<h:inputText id="cpf" value="#{alunoEditMB.bean.cpf}"
+						title="#{messages['aluno.alt.nome']}" label="cpf" >
+						
+					</h:inputText>
+					<p:message for="cpf" />				
+				</h:panelGrid>
+			</p:fieldset>
+		</h:form>
+
+		<h:form rendered="#{alunoEditMB.bean.id != null}">
+			<p:fieldset toggleable="true" legend="Turmas Matriculadas">
+				<p:panel title="Turmas Matriculadas" closable="true">
+					<p:dataTable var="turma" 
+						value="#{alunoEditMB.bean.turmas}" style="width:500px;">
+						<p:column sortBy="#{turma.nome}">
+							<f:facet name="header">Turmas</f:facet>
+							<h:outputText value="#{turma.nome}" />
+						</p:column>
+						<p:column>
+							<p:commandButton id="excluir-aluno-link"
+								action="#{alunoEditMB.desmatricularAjax(turma.id)}"
+								ajax="true" icon="ui-icon-trash" update="@form, :messages">
+							</p:commandButton>
+						</p:column>
+					</p:dataTable>
+				</p:panel>
+			</p:fieldset>
+			<br />
+			<br />
+			<p:fieldset toggleable="true" legend="Turmas Disponiveis">
+				<p:panel title="Turmas Matriculadas" closable="true">
+					<p:dataTable var="turma"
+						value="#{alunoEditMB.turmasDisponiveis}"
+						style="width:500px;">
+						<p:column sortBy="#{turma.nome}">
+							<f:facet name="header">Turmas</f:facet>
+							<h:outputText value="#{turma.nome}" />
+						</p:column>
+						<p:column>
+							<p:commandButton id="excluir-aluno-link"
+								action="#{alunoEditMB.matricularAjax(turma.id)}"
+								ajax="true" icon="ui-icon-plusthick" update="@form, :messages">
+							</p:commandButton>
+						</p:column>
+					</p:dataTable>
+				</p:panel>
+			</p:fieldset>
+		</h:form>
+
+
+
+	</ui:define>
+</ui:composition>

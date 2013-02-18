@@ -1,0 +1,84 @@
+
+<html xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<style type="text/css">
+body {
+	font-family: 'Open Sans', Tahoma; 
+	font-size: 10pt;
+}
+
+.ui-menuitem-text {
+	font-family: 'Open Sans'; 
+	font-size: 12pt;
+}
+
+.ui-button-text {
+	font-family: 'Open Sans'; 
+	font-size: 10pt;
+}
+
+.ui-state-default {
+	font-family: 'Open Sans'; 
+	font-size: 10pt;
+}
+
+.ui-datatable-header {
+	font-family: 'Open Sans'; 
+	font-size: 11pt;
+}
+
+
+</style>
+
+<f:view contentType="text/html" locale="#currentLocale" />
+
+<h:head>
+	<title>#{messages['main.app.title']}</title>
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+</h:head>
+
+
+
+
+<h:body style="background-color:#f1f1f1" >
+<h:form>	
+
+	<p:growl id="messages" globalOnly="true" />
+
+	<p:ajaxStatus style="width:16px;height:16px;">
+		<f:facet name="start">
+		</f:facet>
+
+		<f:facet name="complete">
+			<h:outputText value="#{loginMB.msg}" />
+		</f:facet>
+	</p:ajaxStatus>
+
+
+		<p:panel header="Login">
+		 <h:panelGrid columns="2">
+		 
+		 	<h:outputLabel value="Login:" for="login" />
+		 	<p:inputText id="login" value="#{loginMB.login}" />
+		 
+		 	<h:outputLabel value="Senha:" for="senha" />
+		 	<p:password id="senha" value="#{loginMB.senha}" />
+		 	
+		 	<p:commandButton value="Logar" action="#{loginMB.login}" update="messages" />
+		 	
+		 </h:panelGrid>
+		</p:panel>
+		
+
+		
+	</h:form>	
+
+
+	<link type="text/css" rel="stylesheet" href="css/aristo/skin.css" />
+	
+</h:body>
+</html>
+
+
+
